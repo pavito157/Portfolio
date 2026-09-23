@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!--
+    HOW TO PERSONALIZE THIS FILE
+    1. Press Ctrl+Shift+F (Cmd+Shift+F on Mac) and search for: EDIT
+       Every spot you need to change has a comment that starts with EDIT.
+    2. Anything in [square brackets] is a blank to fill in.
+    3. Save the file. Live Server reloads the page for you.
+  -->
+
+  <!-- EDIT: your name. This text shows in the browser tab and in search results. -->
+  <title>Luis Bravo | Portfolio</title>
+  <!-- EDIT: one sentence about you. Search engines show this under your link. -->
+  <meta name="description" content="Portfolio of Luis Bravo, a [major] student who builds [the kind of things you build].">
+  <meta name="theme-color" content="#F4F6FB">
+
+  <!-- The tab icon. Swap the emoji between the %3E and %3C for any emoji you like. -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E👋%3C/text%3E%3C/svg%3E">
+
+  <!-- Fonts from Google Fonts. To change fonts, see the THEME section in style.css. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Instrument+Sans:wght@400..700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Lets keyboard users jump past the menu. Leave this as is. -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header">
+    <div class="container">
+      <!-- EDIT: your name -->
+      <a class="logo" href="#top">Luis Bravo</a>
+      <nav aria-label="Main">
+        <!-- script.js adds an "active" class to whichever link matches the section on screen -->
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div>
+          <!-- EDIT: your name -->
+          <h1>Luis Bravo</h1>
+          <!-- EDIT: one sentence that says who you are and what you build -->
+          <p class="hero-lead">I'm a [your major] student at [your school] who builds [the kind of things you like building].</p>
+          <div class="actions">
+            <a class="button button-primary" href="#projects">See my projects</a>
+            <a class="button" href="#contact">Get in touch</a>
+          </div>
+        </div>
+
+        <div class="hero-photo">
+          <!--
+            EDIT: your photo.
+            1. Save a portrait photo in the images/ folder (for example images/me.jpg).
+            2. Change src to match, and write alt text that describes the photo.
+            Tip: a 4:5 portrait crop under 500 KB works best.
+          -->
+          <img src="images/avatar.svg" alt="Portrait of Luis Bravo" width="400" height="500">
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section-title">About me</h2>
+
+        <div class="about-grid">
+          <div>
+            <!-- EDIT: replace both paragraphs with your own words. Keep each to 2-3 sentences. -->
+            <p>I'm studying [your major] at [your school] and graduate in [year]. I started building things when [short origin story], and I've been hooked since.</p>
+            <p>Right now I'm working on [your current project] and looking for [internships, research, or teammates]. Outside of code, I [a hobby or two].</p>
+          </div>
+
+          <div>
+            <h3 class="skills-title">Skills and tools</h3>
+            <!-- EDIT: list the skills you can back up in an interview. Copy a <li> line to add more. -->
+            <ul class="chips">
+              <li class="chip">HTML and CSS</li>
+              <li class="chip">Git and GitHub</li>
+              <li class="chip">Python</li>
+              <li class="chip">Figma</li>
+              <li class="chip">VS Code</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROJECTS ===================== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <!-- EDIT: one line about your projects -->
+        <p>A few things I've built. Each one links to the code.</p>
+
+        <!--
+          TO ADD A PROJECT: copy one whole <article> ... </article> block,
+          paste it below the last project, and edit the text.
+          TO REMOVE ONE: delete the whole block. Two strong projects beat three weak ones.
+
+          For each project, edit:
+          - the image: save a screenshot in images/ and change src and alt
+          - the title
+          - the description. Formula: what it does + what you used + one concrete result.
+          - the tags
+          - the links (delete the Live demo link if you don't have one)
+          All three projects below are sample text. Replace them.
+        -->
+        <div class="project-grid">
+
+          <article class="project">
+            <img src="images/project-1.svg" alt="Screenshot of the Weather Dashboard showing a five-day forecast" width="640" height="400">
+            <div class="project-body">
+              <h3>Weather Dashboard</h3>
+              <p>Shows a five-day forecast for any city. Built with JavaScript and a public weather API, and loads in under a second.</p>
+              <ul class="chips project-tags">
+                <li class="chip">JavaScript</li>
+                <li class="chip">REST API</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://github.com/your-username/weather-dashboard">View code</a>
+                <a href="https://your-project.netlify.app">Live demo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project">
+            <img src="images/project-2.svg" alt="Screenshot of the Study Buddy app showing a list of study groups" width="640" height="400">
+            <div class="project-body">
+              <h3>Study Buddy</h3>
+              <p>Matches classmates into study groups by course and schedule. Built with a team of three and tested with 40 students in my dorm.</p>
+              <ul class="chips project-tags">
+                <li class="chip">React</li>
+                <li class="chip">Firebase</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://github.com/your-username/study-buddy">View code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project">
+            <img src="images/project-3.svg" alt="Screenshot of the Budget Tracker showing monthly spending as a bar chart" width="640" height="400">
+            <div class="project-body">
+              <h3>Budget Tracker</h3>
+              <p>Tracks spending by category and charts it by month. I wrote the data model and the chart view.</p>
+              <ul class="chips project-tags">
+                <li class="chip">Python</li>
+                <li class="chip">SQLite</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://github.com/your-username/budget-tracker">View code</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <!-- EDIT: what you're open to -->
+        <p>I'm open to [internships, research, and side projects]. Email is the fastest way to reach me.</p>
+
+        <!-- EDIT: use the same address in both places below -->
+        <div class="email-row">
+          <a class="email" href="mailto:you@example.com">you@example.com</a>
+          <!--
+            "Copy" button: script.js copies the link text above onto the
+            visitor's clipboard so they don't have to select the text by hand.
+            EDIT: nothing here — it copies whatever the .email link says.
+          -->
+          <button class="copy-button" type="button" data-copy-target=".email">Copy</button>
+        </div>
+
+        <ul class="social-links">
+          <!-- EDIT: replace your-username with your real usernames -->
+          <li><a href="https://github.com/your-username">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/your-username">LinkedIn</a></li>
+          <!-- OPTIONAL: to add a resume link, put resume.pdf in this folder, then remove the comment markers from the line below. -->
+          <!-- <li><a href="resume.pdf">Resume</a></li> -->
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container">
+      <!-- EDIT: your name. The year fills itself in — see script.js. -->
+      <p>&copy; <span id="year">2026</span> Luis Bravo</p>
+    </div>
+  </footer>
+
+  <!-- Adds small interactive touches. See the comments inside script.js. -->
+  <script src="script.js"></script>
+</body>
+</html>
